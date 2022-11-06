@@ -1,6 +1,7 @@
 # Secret pass
 
 Secret-pass is a simple, self-hosted service that allows you to securely get a secret from someone.
+You can try in on [Secret-pass](https://nniel.site)
 
 ## Parameters
 
