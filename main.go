@@ -14,7 +14,7 @@ var revision string
 
 var opts struct {
 	Port     string        `short:"p" long:"port" env:"PORT" default:":8080" description:"Service port"`
-	Lifespan time.Duration `short:"ls" long:"lifespan" env:"LIFESPAN" description:"Secret lifespan"`
+	Lifespan time.Duration `short:"l" long:"lifespan" env:"LIFESPAN" description:"Secret lifespan"`
 	Debug    bool          `long:"dbg" env:"DEBUG" description:"Enable debug mode"`
 }
 
