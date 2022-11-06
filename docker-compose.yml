@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  secret-pass:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    environment:
+      # - DEBUG=true
+      - PORT=:8080
+      - LIFESPAN=1m
+    ports:
+      - "8080:8080"
