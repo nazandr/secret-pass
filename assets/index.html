@@ -102,7 +102,11 @@
                 "time": Date.now()
             };
             localStorage.setItem(data.hash, JSON.stringify(key));
-            copyLink();
+            try {
+                copyLink();
+            } catch (error) {
+                document.getElementById("text").innerHTML = "You need to copy link manualy";
+            }
         }).catch(function (error) {
             console.log(error);
         });
